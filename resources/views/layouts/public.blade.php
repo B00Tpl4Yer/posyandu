@@ -10,7 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
+      <link rel="stylesheet" href="asset/darkmode.css">
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -21,9 +21,12 @@
         <nav class="bg-transparent backdrop-filter backdrop-blur-sm transition-all duration-300 fixed w-full z-20 top-0 left-0 ">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center">
-                    <span class="self-center font-bold whitespace-nowrap dark:text-white">
-                        <span class="text-xl sm:text-2xl xl:text-3xl  ">Posyandu </span>
-                    </span>
+
+                    <div class="back">
+
+                            <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+
+                    </div>
                 </a>
                 <div class="flex md:order-2">
 

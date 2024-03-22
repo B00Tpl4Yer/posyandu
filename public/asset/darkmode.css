@@ -1,0 +1,13 @@
+body {
+    background-image:url("light.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back {
+    background-image:url("light.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

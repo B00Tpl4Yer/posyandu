@@ -5,9 +5,11 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <span class="self-center font-bold whitespace-nowrap dark:text-white">
-                        <span class="text-xl sm:text-2xl xl:text-3xl  ">Posyandu </span>
-                    </span>
+                    <div class="back">
+
+                        <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+
+                </div>
 
                 </div>
             </div>

@@ -15,7 +15,7 @@ $inc = 'layouts.public';
 
 @section('content')
 
-    <div class=" grid grid-cols-1  w-96  mt-20 mb-56 text-black dark:text-white">
+    <div class=" grid grid-cols-1  w-96 mt-5 xl:mt-80  pt-80 mb-56 text-black dark:text-white">
         <div class="text-xl text-center text-black dark:text-white mb-5">Pada menu utama dengan berisikan 7 menu yaitu menu cek status gizi , menu cek berat ideal , menu pembelajaran anak , menu bantuan, menu resep, menu info tumbuh kembang anak dan menu lokasi puskesmas kota parepare.</div>
         <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
             <h2 id="accordion-color-heading-1">

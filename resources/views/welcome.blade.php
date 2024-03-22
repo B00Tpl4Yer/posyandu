@@ -14,7 +14,7 @@ if ($user && $user->hasRole('admin')) {
 @extends($coba)
 
 @section('content')
-    <div class="text-black dark:text-white mb-52 mt-8">
+    <div class="text-black dark:text-white mb-52 pt-28 xl:pt-80  ">
         @if(session('success'))
 <div class="alert alert-success">{{ session('success') }}</div>
 @endif
