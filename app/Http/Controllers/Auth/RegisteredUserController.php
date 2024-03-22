@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Spatie\Permission\Models\Role;
+
 
 class RegisteredUserController extends Controller
 {
@@ -41,6 +43,10 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
+
+         $penggunaTerdaftarRole = Role::findByName('pengguna terdaftar');
+         $user->assignRole($penggunaTerdaftarRole);
+         $user->givePermissionTo(['cek status gizi','cek berat badan ideal','pembelajaran anak','kirim feedback','lihat resep']);
 
         event(new Registered($user));
 

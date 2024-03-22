@@ -26,5 +26,18 @@
                 {{ $slot }}
             </div>
         </div>
+        <script src="asset/darkmode.js"></script>
+        <script>
+            const showCheckbox = document.getElementById('show');
+            const passwordInput = document.getElementById('password');
+
+            showCheckbox.addEventListener('change', function () {
+                if (this.checked) {
+                    passwordInput.type = 'text';
+                } else {
+                    passwordInput.type = 'password';
+                }
+            });
+                </script>
     </body>
 </html>
